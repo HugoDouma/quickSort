@@ -23,7 +23,6 @@ let comparisons = 0;
             var newArray = [];
             var pivot = origArray.pop();
             var length = origArray.length;
-            // I have tried comparisons += length - 1; too, but i doesn't work
             comparisons += length;
             for (var i = 0; i < length; i++) {
                 if (origArray[i] <= pivot) {
@@ -48,26 +47,7 @@ let comparisons = 0;
     }
 
 const result = quick_Sort(finalFile); 
-// expected output: 25
 
 console.log(result);
 
 
-/*res.status(200).json({
-    "data": {
-        comparisons,
-        length: result.length,
-        result
-    }
-})
-
-
-
-
-
-app.listen(3500, () => {
-    console.log('Server is listening');
-}) */
-
-//var sortedArray = quick_Sort(finalFile, 0, items.length - 1);
-//console.log(sortedArray);
